@@ -3,6 +3,8 @@ var router = require('./ExpressRoute');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
+var todoRouter = require('./Todos/TodoService');
+
 var app = express();
 
 app.use(cookieParser());
@@ -29,11 +31,22 @@ app.get('/', function(req, res, next){
    }
 });
 
+
+//Start Todo 
+
+app.use('/todo', todoRouter);
+
+//End Todo
+
+
+
+
 //middleware for all requests - can modify request here
 app.use(function(req, res, next){
 	console.log('Request received at ' + Date() );
 	next();
 });
+
 
 app.use(function(err, req, res, next){
 	console.log('Error Handled here =' + err );
