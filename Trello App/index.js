@@ -1,3 +1,5 @@
+require('babel-register');
+
 var express = require('express'),
     app = express(),
     PORT = 8080;

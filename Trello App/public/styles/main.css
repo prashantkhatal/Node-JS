@@ -1,0 +1,20 @@
+.bg-1{
+    background-color: #37bc8a;
+}
+
+.bg-2{
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+.page-logo {
+    background: url(/media/images/page-logo.png) 0 0 no-repeat;
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.main-container {
+    min-height: -webkit-fill-available;
+}
