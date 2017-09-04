@@ -2,7 +2,7 @@ require('babel-register');
 
 var express = require('express'),
     app = express(),
-    PORT = 8080;
+    PORT = 8085;
 
 var server = require('./app/server');
 
